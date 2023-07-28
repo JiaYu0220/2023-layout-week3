@@ -1,4 +1,25 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  background-color: $primary;
+  color: white;
+}
+.logo {
+  width: 80px;
+}
+.nav {
+  display: flex;
+  a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    transition: background-color 0.3s;
+    &:active {
+      background-color: darken($color: $primary, $amount: 10%);
+    }
+
+    &:hover {
+      background-color: darken($color: $primary, $amount: 10%);
+    }
+  }
 }
