@@ -1,0 +1,16 @@
+label[for="privacy"] {
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  display: none;
+}
+// 選擇 input 旁邊的 span
+input[type="checkbox"] + span {
+  background: url("../images/checkbox_unchecked.png") no-repeat;
+  display: inline-block;
+  padding-left: 28px;
+  user-select: none; //防止反白
+}
+input[type="checkbox"]:checked + span {
+  background: url("../images/checkbox_checked.png") no-repeat;
+}

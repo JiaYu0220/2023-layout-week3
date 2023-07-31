@@ -1,0 +1,65 @@
+.fs-14 {
+  font-size: 14px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-36 {
+  font-size: 36px;
+}
+.fs-48 {
+  font-size: 48px;
+}
+.fw-bolder {
+  font-weight: 900;
+}
+.fw-bold {
+  font-weight: 700;
+}
+.title-1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+.title-2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.title-3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.text-black {
+  color: $black;
+}
+.text-white {
+  color: $white;
+}
+.text-gray {
+  color: $gray;
+}
+
+.display-1 {
+  font-style: italic;
+  color: $primary;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+@include sm {
+  .fs-sm-24 {
+    font-size: 24px;
+  }
+  .fs-sm-20 {
+    font-size: 20px;
+  }
+  .fs-sm-18 {
+    font-size: 18px;
+  }
+  .fs-sm-16 {
+    font-size: 16px;
+  }
+}

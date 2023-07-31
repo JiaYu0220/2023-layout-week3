@@ -1,3 +1,18 @@
-.index-title {
-  font-size: 100px;
+.banner {
+  background: url("../images/home-header.png") no-repeat;
+  background-size: cover;
+  padding-top: 296px;
+  padding-bottom: 296px;
+
+  @include sm {
+    background: url("../images/home-header-sm.png") no-repeat;
+    background-size: contain;
+    padding-top: 144px;
+    padding-bottom: 144px;
+  }
+}
+
+.co-branding {
+  background: url("../images/index-bg.png") no-repeat;
+  background-size: cover;
 }

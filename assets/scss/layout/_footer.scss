@@ -1,4 +1,20 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer {
+  a {
+    transition: color 0.3s;
+    &:active,
+    &:hover {
+      color: #ddd;
+    }
+  }
+}
+.social {
+  width: 48px;
+  transition: transform 0.3s;
+  &:hover,
+  &:active {
+    transform: scale(1.05);
+  }
+  @include sm {
+    width: 24px;
+  }
 }

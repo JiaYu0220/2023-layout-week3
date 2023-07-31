@@ -1,25 +1,29 @@
-.header {
-  background-color: $primary;
-  color: white;
-}
 .logo {
   width: 80px;
 }
 .nav {
   display: flex;
   a {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 32px;
-    padding-right: 32px;
-
+    padding: 25px 32px;
     transition: background-color 0.3s;
-    &:active {
-      background-color: darken($color: $primary, $amount: 10%);
-    }
-
+    &:active,
     &:hover {
-      background-color: darken($color: $primary, $amount: 10%);
+      background-color: $red-dark;
+    }
+  }
+}
+
+@include sm {
+  .nav {
+    flex-wrap: wrap;
+    li {
+      width: 50%;
+      border: 1px solid $white;
+      text-align: center;
+    }
+    a {
+      padding-top: 12px;
+      padding-bottom: 12px;
     }
   }
 }

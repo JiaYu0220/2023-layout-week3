@@ -1,0 +1,117 @@
+// margin
+.ml-auto {
+  margin-left: auto;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-1 {
+  margin-bottom: 4px;
+}
+.mb-2 {
+  margin-bottom: 8px;
+}
+.mr-4 {
+  margin-right: 4px;
+}
+.mb-4 {
+  margin-bottom: 16px;
+}
+.mr-5 {
+  margin-right: 20px;
+}
+.mb-6 {
+  margin-bottom: 24px;
+}
+.mb-8 {
+  margin-bottom: 32px;
+}
+.ml-8 {
+  margin-left: 32px;
+}
+.mb-9 {
+  margin-bottom: 36px;
+}
+.mr-12 {
+  margin-right: 48px;
+}
+.mb-12 {
+  margin-bottom: 48px;
+}
+.mb-18 {
+  margin-bottom: 72px;
+}
+@include md {
+  .ml-md-4 {
+    margin-left: 16px;
+  }
+}
+@include sm {
+  .mb-sm-2 {
+    margin-bottom: 8px;
+  }
+  .ml-sm-2 {
+    margin-left: 8px;
+  }
+  .mr-sm-3 {
+    margin-right: 12px;
+  }
+  .m-sm-4 {
+    margin: 16px;
+  }
+  .mb-sm-6 {
+    margin-bottom: 24px;
+  }
+}
+// padding
+.p-4 {
+  padding: 16px;
+}
+.pt-15 {
+  padding-top: 60px;
+}
+.py-8 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.py-20 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@include md {
+  .pt-md-12 {
+    padding-top: 48px;
+  }
+}
+@include sm {
+  .py-sm-4 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .pt-sm-6 {
+    padding-top: 24px;
+  }
+  .py-sm-10 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+// gap
+.g-6 {
+  gap: 24px;
+}
+@include md {
+  .g-md-6 {
+    gap: 24px;
+  }
+}
+@include sm {
+  .g-sm-4 {
+    gap: 16px;
+  }
+}

@@ -1,0 +1,25 @@
+.btn {
+  font-size: 16px;
+  display: inline-block;
+  background-color: $primary;
+  color: white;
+  padding: 6px 12px;
+  transition: background-color 0.3s;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $red-dark;
+  }
+}
+
+.btn-l {
+  padding: 16px;
+  width: 65%;
+
+  @include sm {
+    width: 100%;
+  }
+}

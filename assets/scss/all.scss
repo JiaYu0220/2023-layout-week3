@@ -1,10 +1,20 @@
 @import "./base/reset.scss";
+
+@import "./utils/mixin.scss";
 @import "./utils/variables.scss";
-@import "./utils/helpers.scss";
+
 @import "./base/base.scss";
 @import "./base/typography.scss";
+
+@import "./components/buttons.scss";
+@import "./components/checkbox.scss";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 
 @import "./pages/index.scss";
+
+@import "./themes/themes.scss";
+@import "./utils/helpers.scss";
+@import "./utils/grid.scss";
+@import "./utils/spacing.scss";
