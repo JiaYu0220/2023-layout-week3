@@ -4,15 +4,25 @@
   padding-top: 296px;
   padding-bottom: 296px;
 
-  @include sm {
+  @include md {
     background: url("../images/home-header-sm.png") no-repeat;
-    background-size: contain;
-    padding-top: 144px;
-    padding-bottom: 144px;
+    background-size: cover;
+    @include sm {
+      padding-top: 144px;
+      padding-bottom: 144px;
+    }
   }
 }
 
 .co-branding {
   background: url("../images/index-bg.png") no-repeat;
   background-size: cover;
+  @include md {
+    background: url("../images/index-bg-md.png") no-repeat;
+    background-size: cover;
+  }
+  @include sm {
+    background: url("../images/index-bg-sm.png") no-repeat;
+    background-size: cover;
+  }
 }
