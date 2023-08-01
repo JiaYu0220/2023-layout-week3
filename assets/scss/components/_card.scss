@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; //因其父層 col是flex內元件有align-items預設為 normal，等同 stretch 效果，height: 100% 讓其高度和父層 col 相同，可使卡片等高
+  &_body {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    & :last-child {
+      margin-top: auto;
+    }
+  }
+}
+.card-shadow {
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid $gray-light;
+}

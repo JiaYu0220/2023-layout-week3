@@ -50,6 +50,9 @@
   .ml-md-4 {
     margin-left: 16px;
   }
+  .mb-md-6 {
+    margin-bottom: 24px;
+  }
 }
 @include sm {
   .mb-sm-2 {
@@ -61,6 +64,9 @@
   .mr-sm-3 {
     margin-right: 12px;
   }
+  .mb-sm-4 {
+    margin-bottom: 16px;
+  }
   .m-sm-4 {
     margin: 16px;
   }
@@ -69,6 +75,10 @@
   }
 }
 // padding
+.px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
 .p-4 {
   padding: 16px;
 }

@@ -43,12 +43,25 @@
 }
 
 .display-1 {
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   color: $primary;
   font-size: 48px;
   font-weight: 900;
 }
-
+@include lg {
+  .fs-lg-36 {
+    font-size: 36px;
+  }
+}
+@include md {
+  .fs-md-48 {
+    font-size: 48px;
+  }
+  .fs-vw-md-36 {
+    font-size: calc(36 / 768 * 100vw);
+  }
+}
 @include sm {
   .fs-sm-24 {
     font-size: 24px;

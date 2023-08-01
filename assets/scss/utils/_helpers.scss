@@ -8,6 +8,9 @@
 .d-flex {
   display: flex;
 }
+.flex-grow-1 {
+  flex-grow: 1;
+}
 .flex-column {
   flex-direction: column;
 }
@@ -29,6 +32,11 @@
 .text-left {
   text-align: left;
 }
+@include md {
+  .flex-md-column {
+    flex-direction: column;
+  }
+}
 @include sm {
   .d-sm-none {
     display: none;
@@ -41,24 +49,6 @@
   }
 }
 
-// box 樣式
-.overflow-hidden {
-  overflow: hidden;
-}
-.shadow {
-  box-shadow: 0px 2px 6px #00000029;
-}
-.border-light {
-  border: 1px solid $gray-light;
-}
-.border-dark {
-  border: 1px solid $gray-dark;
-}
 .radius-1 {
   border-radius: 4px;
-}
-
-// img
-.img-cover {
-  object-fit: cover;
 }
