@@ -3,11 +3,11 @@
 *::before {
   box-sizing: border-box;
 }
+
 body {
-  font-family: "Noto Sans TC", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: $red-dark;
+  font-family: $font-family-primary; //"Noto Sans TC", sans-serif
+  line-height: $line-height-base; //1.5
+  font-weight: $font-normal; //400
 }
 img {
   max-width: 100%;
@@ -24,12 +24,15 @@ input,
 textarea {
   display: inline-block;
   padding: 6px 12px;
-  font-size: 16px;
+  font-size: $font-size-base; //16px
   background: transparent;
   border: 1px solid $black;
 }
+hr {
+  border: 1px solid;
+  margin: 0;
+}
+
 label {
   display: inline-block;
 }
-
-

@@ -1,0 +1,46 @@
+.color-block {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.bg-brown {
+  background-color: #b75929;
+}
+.bg-brown {
+  background-color: #5f3e2d;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: keep-all;
+  color: #555555;
+  font-size: $font-size-9; //18px
+  li {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+
+    &:last-child {
+      border-right: 1px solid black;
+    }
+  }
+  a {
+    display: block;
+    width: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+  .pagination_text {
+    width: 75px;
+  }
+  .active {
+    background-color: $black;
+    color: $white;
+    pointer-events: none;
+  }
+}

@@ -1,9 +1,9 @@
 .card {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   height: 100%; //因其父層 col是flex內元件有align-items預設為 normal，等同 stretch 效果，height: 100% 讓其高度和父層 col 相同，可使卡片等高
   &_body {
-    padding: 4px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -12,8 +12,29 @@
       margin-top: auto;
     }
   }
+  &_justify {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .card-shadow {
   box-shadow: 0px 2px 6px #00000029;
-  border: 1px solid $gray-light;
+  border: 1px solid #dee2e6;
+}
+
+.card-hover {
+  .card-hover-opacity {
+    transition: filter 0.3s;
+  }
+  &:hover .card-hover-opacity {
+    filter: opacity(0.6);
+  }
+
+  .card-hover-scale {
+    transition: transform 0.3s;
+  }
+  &:hover .card-hover-scale {
+    transform: scale(1.2);
+  }
 }

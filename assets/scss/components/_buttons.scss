@@ -2,6 +2,7 @@
   font-size: 16px;
   display: inline-block;
   background-color: $primary;
+  text-align: center;
   color: white;
   padding: 6px 12px;
   transition: background-color 0.3s;
@@ -11,7 +12,7 @@
 
   &:hover,
   &:active {
-    background-color: $red-dark;
+    background-color: $primary-dark;
   }
 }
 
@@ -22,4 +23,12 @@
   @include sm {
     width: 100%;
   }
+}
+.btn-xl {
+  padding: 16px;
+  width: 100%;
+}
+.btn-black {
+  background-color: $black;
+  color: white;
 }

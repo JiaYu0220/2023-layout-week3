@@ -1,9 +1,43 @@
+// color
 $primary: #aa0601;
-$secondary: #fbf2f2;
-$red-dark: #650300;
+$primary-light: #fbf2f2;
+$primary-dark: #650300;
 
 $white: #ffffff;
-$gray-light: #dee2e6;
 $gray: #707070;
-$gray-dark: #00000020;
+$gray-dark: #555555;
 $black: #000000;
+
+//font-family
+$font-family-primary: "Noto Sans TC", sans-serif;
+$font-family-secondary: "Roboto", sans-serif;
+
+//font-size
+$font-size-base: 1rem; // 16px
+$font-size-11: $font-size-base * 0.875; // 14px
+$font-size-9: $font-size-base * 1.125; // 18px
+$font-size-8: $font-size-base * 1.25; // 20px
+$font-size-7: $font-size-base * 1.5; // 24px
+$font-size-6: $font-size-base * 2; // 32px
+$font-size-5: $font-size-base * 2.25; // 36px
+$font-size-4: $font-size-base * 2.5; // 40px
+$font-size-3: $font-size-base * 2.625; // 42px
+$font-size-2: $font-size-base * 3; // 48px
+$font-size-1: $font-size-base * 4; // 64px
+
+//font weight
+$font-normal: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-black: 900;
+
+//line height
+$line-height-base: 1.5;
+
+//col
+$col-base: calc(1 / 12 * 100%); //8.333%
+$col-max: 12;
+
+//spacing
+$spacing-base: 4px;
+$spacing-max: 24;

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>門市據點-台北中山旗艦店 | GLASSES</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+      <div class="container">
+        <h2
+          class="title-2 fs-sm-7 text-border-left pl-4 mt-24 mb-8 mt-md-20 mt-sm-10 mb-sm-6"
+        >
+          門市據點
+        </h2>
+        <div class="d-flex mb-10 mb-sm-6">
+          <label for="location" class="word-keep fs-7 fs-sm-10 mr-4 mr-sm-2"
+            >選擇分店</label
+          >
+          <select class="select" name="location" id="location">
+            <option value="台北中山旗艦店">台北中山旗艦店</option>
+            <option value="台北綠園店">台北綠園店</option>
+          </select>
+        </div>
+        <!-- card -->
+        <div class="row mb-20 mb-sm-16">
+          <div
+            class="card col-5 px-3 mb-md-6 col-md-12 col-sm-12 flex-md-row flex-sm-column"
+          >
+            <!-- 圖 -->
+            <img
+              class="d-md-none"
+              src="../assets/images/storepage-1.png"
+              alt="store"
+            />
+            <img
+              class="d-none d-md-block img-cover col-md-6 mr-md-6 col-sm-12 mr-sm-0"
+              src="../assets/images/store-1.png"
+              alt="store"
+            />
+            <div class="col-md-6 col-sm-12">
+              <!-- 標題 -->
+              <h3 class="fs-7 border-gray px-6 py-2">台北中山旗艦店</h3>
+              <!-- 資訊 -->
+              <div class="card_body border-gray px-6 py-4">
+                <!-- 電話 -->
+                <div>
+                  <a class="d-flex mb-2" href="tel:+886-2-000-1234">
+                    <span class="material-symbols-outlined mr-2 fs-7">call</span
+                    ><span class="fs-8">電話：(02)000-1234</span>
+                  </a>
+                </div>
+                <!-- 時間 -->
+                <div class="d-flex mb-2">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >schedule</span
+                  ><span class="fs-8">營業時間：10:00-21:00</span>
+                </div>
+                <!-- 地址 -->
+                <div class="d-flex">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >location_on</span
+                  ><span class="fs-8">地址：台北市中山區南京東路25巷2-1號</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- google map -->
+          <div class="col-7 col-md-12 px-3">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4637571499934!2d121.53299918041024!3d25.052266120575062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1691148322183!5m2!1szh-TW!2stw"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

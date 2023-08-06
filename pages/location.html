@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>門市據點 | GLASSES</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+      <div class="container">
+        <h2
+          class="title-2 fs-sm-7 text-border-left pl-4 mt-24 mb-8 mt-md-20 mt-sm-10 mb-sm-6"
+        >
+          門市據點
+        </h2>
+        <div class="d-flex mb-10 mb-sm-6">
+          <label for="location" class="word-keep fs-7 fs-sm-10 mr-4 mr-sm-2"
+            >選擇地區</label
+          >
+          <select class="select" name="location" id="location">
+            <option value="台北市">台北市</option>
+            <option value="台中市">台中市</option>
+            <option value="高雄市">高雄市</option>
+          </select>
+        </div>
+        <!-- card -->
+        <ul class="row justify-content-start gy-12 gy-sm-6 mb-20 mb-sm-16">
+          <!-- 1 -->
+          <li class="col-4 col-md-6 col-sm-12 px-3">
+            <div class="card card-hover" href="#">
+              <!-- 圖 -->
+              <div class="overflow-hidden">
+                <img
+                  class="card-hover-scale"
+                  src="../assets/images/store-1.png"
+                  alt="store"
+                />
+              </div>
+              <!-- 標題 -->
+              <h3 class="fs-7 border-gray px-6 py-2">台北中山旗艦店</h3>
+              <!-- 資訊 -->
+              <div class="card_body border-gray px-6 py-4">
+                <!-- 電話 -->
+                <div>
+                  <a class="d-flex mb-2" href="tel:+886-2-000-1234">
+                    <span class="material-symbols-outlined mr-2 fs-7">call</span
+                    ><span class="fs-8">電話：(02)000-1234</span>
+                  </a>
+                </div>
+                <!-- 時間 -->
+                <div class="d-flex mb-2">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >schedule</span
+                  ><span class="fs-8">營業時間：10:00-21:00</span>
+                </div>
+                <!-- 地址 -->
+                <div class="d-flex">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >location_on</span
+                  ><span class="fs-8">地址：台北市中山區南京東路25巷2-1號</span>
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <a href="./location-1.html" class="btn btn-xl btn-black fs-8"
+                >詳細資訊
+              </a>
+            </div>
+          </li>
+
+          <!-- 2 -->
+          <li class="col-4 col-md-6 col-sm-12 px-3">
+            <div class="card card-hover" href="#">
+              <!-- 圖 -->
+              <div class="overflow-hidden">
+                <img
+                  class="card-hover-scale"
+                  src="../assets/images/store-2.png"
+                  alt="store"
+                />
+              </div>
+              <!-- 標題 -->
+              <h3 class="fs-7 border-gray px-6 py-2">台北綠園店</h3>
+              <!-- 資訊 -->
+              <div class="card_body border-gray px-6 py-4">
+                <!-- 電話 -->
+                <div>
+                  <a class="d-flex mb-2" href="tel:+886-2-000-2345">
+                    <span class="material-symbols-outlined mr-2 fs-7">call</span
+                    ><span class="fs-8">電話：(02)000-2345</span>
+                  </a>
+                </div>
+                <!-- 時間 -->
+                <div class="d-flex mb-2">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >schedule</span
+                  ><span class="fs-8">營業時間：10:00-21:00</span>
+                </div>
+                <!-- 地址 -->
+                <div class="d-flex">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >location_on</span
+                  ><span class="fs-8">地址：台北市中正區復興南路 132-1 號</span>
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <a href="#" class="btn btn-xl btn-black fs-8">詳細資訊 </a>
+            </div>
+          </li>
+
+          <!-- 3 -->
+          <li class="col-4 col-md-6 col-sm-12 px-3">
+            <div class="card card-hover" href="#">
+              <!-- 圖 -->
+              <div class="overflow-hidden">
+                <img
+                  class="card-hover-scale"
+                  src="../assets/images/store-3.png"
+                  alt="store"
+                />
+              </div>
+              <!-- 標題 -->
+              <h3 class="fs-7 border-gray px-6 py-2">台中清水旗艦店</h3>
+              <!-- 資訊 -->
+              <div class="card_body border-gray px-6 py-4">
+                <!-- 電話 -->
+                <div>
+                  <a class="d-flex mb-2" href="tel:+886-2-000-1234">
+                    <span class="material-symbols-outlined mr-2 fs-7">call</span
+                    ><span class="fs-8">電話：(02)000-1234</span>
+                  </a>
+                </div>
+                <!-- 時間 -->
+                <div class="d-flex mb-2">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >schedule</span
+                  ><span class="fs-8">營業時間：10:00-21:00</span>
+                </div>
+                <!-- 地址 -->
+                <div class="d-flex">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >location_on</span
+                  ><span class="fs-8"
+                    >地址：台中市清水區經南一路 23 號 8 樓</span
+                  >
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <a href="#" class="btn btn-xl btn-black fs-8">詳細資訊 </a>
+            </div>
+          </li>
+
+          <!-- 4 -->
+          <li class="col-4 col-md-6 col-sm-12 px-3">
+            <div class="card card-hover" href="#">
+              <!-- 圖 -->
+              <div class="overflow-hidden">
+                <img
+                  class="card-hover-scale"
+                  src="../assets/images/store-4.png"
+                  alt="store"
+                />
+              </div>
+              <!-- 標題 -->
+              <h3 class="fs-7 border-gray px-6 py-2">高雄中正形象店</h3>
+              <!-- 資訊 -->
+              <div class="card_body border-gray px-6 py-4">
+                <!-- 電話 -->
+                <div>
+                  <a class="d-flex mb-2" href="tel:+886-7-000-2345">
+                    <span class="material-symbols-outlined mr-2 fs-7">call</span
+                    ><span class="fs-8">電話：(07)000-2345</span>
+                  </a>
+                </div>
+                <!-- 時間 -->
+                <div class="d-flex mb-2">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >schedule</span
+                  ><span class="fs-8">營業時間：10:00-21:00</span>
+                </div>
+                <!-- 地址 -->
+                <div class="d-flex">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >location_on</span
+                  ><span class="fs-8"
+                    >地址：高雄市苓雅區中正路 38 號 12 樓</span
+                  >
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <a href="#" class="btn btn-xl btn-black fs-8">詳細資訊 </a>
+            </div>
+          </li>
+
+          <!-- 5 -->
+          <li class="col-4 col-md-6 col-sm-12 px-3">
+            <div class="card card-hover" href="#">
+              <!-- 圖 -->
+              <div class="overflow-hidden">
+                <img
+                  class="card-hover-scale"
+                  src="../assets/images/store-5.png"
+                  alt="store"
+                />
+              </div>
+              <!-- 標題 -->
+              <h3 class="fs-7 border-gray px-6 py-2">高雄夢時代店</h3>
+              <!-- 資訊 -->
+              <div class="card_body border-gray px-6 py-4">
+                <!-- 電話 -->
+                <div>
+                  <a class="d-flex mb-2" href="tel:+886-7-000-1234">
+                    <span class="material-symbols-outlined mr-2 fs-7">call</span
+                    ><span class="fs-8">電話：(07)000-1234</span>
+                  </a>
+                </div>
+                <!-- 時間 -->
+                <div class="d-flex mb-2">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >schedule</span
+                  ><span class="fs-8">營業時間：10:00-21:00</span>
+                </div>
+                <!-- 地址 -->
+                <div class="d-flex">
+                  <span class="material-symbols-outlined mr-2 fs-7"
+                    >location_on</span
+                  ><span class="fs-8"
+                    >地址：高雄市前鎮區中華一路 63 號 6 樓</span
+                  >
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <a href="#" class="btn btn-xl btn-black fs-8">詳細資訊 </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

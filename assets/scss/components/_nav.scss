@@ -1,0 +1,70 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    text-align: center;
+  }
+  a {
+    display: block;
+  }
+  .active {
+    pointer-events: none;
+  }
+}
+.nav-m {
+  a {
+    padding: 12px 0 4px;
+    margin-bottom: 4px;
+  }
+}
+//header
+.nav-l {
+  a {
+    padding-top: 24px;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+
+    @include sm {
+      padding-top: 12px;
+      padding-bottom: 8px;
+      margin: 0;
+    }
+  }
+  @include sm {
+    li {
+      width: 50%;
+      border: 1px solid $white;
+    }
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+
+//product
+.nav-tab {
+  li {
+    text-align: center;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    &:last-child {
+      border-right: 1px solid #dcdcdc;
+    }
+  }
+
+  a {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    border-bottom: 8px solid transparent;
+
+    @include md {
+      padding-top: 16px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .active {
+    border-bottom-color: $primary;
+  }
+}

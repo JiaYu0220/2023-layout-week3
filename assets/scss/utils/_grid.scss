@@ -10,6 +10,13 @@
     max-width: 375px;
   }
 }
+@include md {
+  .container-md-100 {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @include sm {
   .container-sm-100 {
     max-width: 100%;
@@ -26,36 +33,25 @@
   margin-right: -12px;
 }
 
-$base-col: calc(1 / 12 * 100%);
-.col-1 {
-  width: $base-col;
-}
-.col-3 {
-  width: $base-col * 3;
-}
-.col-4 {
-  width: $base-col * 4;
-}
-.col-6 {
-  width: $base-col * 6;
-}
-.col-12 {
-  width: 100%;
-}
-
-@include md {
-  .col-md-6 {
-    width: $base-col * 6;
-  }
-  .col-md-10 {
-    width: $base-col * 10;
-  }
-  .col-md-12 {
-    width: 100%;
+//$col-base: calc(1 / 12 * 100%); //8.333%
+//$col-max: 12;
+//分開寫，確保sm覆蓋md，md覆蓋電腦
+@for $i from 1 through $col-max {
+  .col-#{$i} {
+    width: $col-base * $i;
   }
 }
-@include sm {
-  .col-sm-12 {
-    width: 100%;
+@for $i from 1 through $col-max {
+  @include md {
+    .col-md-#{$i} {
+      width: $col-base * $i;
+    }
+  }
+}
+@for $i from 1 through $col-max {
+  @include sm {
+    .col-sm-#{$i} {
+      width: $col-base * $i;
+    }
   }
 }
