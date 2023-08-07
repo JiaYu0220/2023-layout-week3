@@ -23,6 +23,7 @@
     padding-top: 24px;
     padding-bottom: 8px;
     margin-bottom: 12px;
+    // 留 border-bottom 4px
 
     @include sm {
       padding-top: 12px;
@@ -57,6 +58,7 @@
     padding-top: 24px;
     padding-bottom: 16px;
     border-bottom: 8px solid transparent;
+    word-break: break-all;
 
     @include md {
       padding-top: 16px;

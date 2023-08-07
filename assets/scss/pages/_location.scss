@@ -29,7 +29,10 @@
 
 .map {
   width: 100%;
-  height: 418px;
+  height: 100%;
+  @include md {
+    height: 414px;
+  }
   @include sm {
     height: 208px;
   }
