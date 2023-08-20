@@ -7,7 +7,6 @@
 body {
   font-family: $font-family-primary; //"Noto Sans TC", sans-serif
   line-height: $line-height-base; //1.5
-  font-weight: $font-normal; //400
 }
 img {
   max-width: 100%;
@@ -27,6 +26,7 @@ textarea {
   font-size: $font-size-base; //16px
   background: transparent;
   border: 1px solid $black;
+  resize: none;
 }
 hr {
   border: 1px solid;
